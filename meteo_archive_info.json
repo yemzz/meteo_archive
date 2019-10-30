@@ -1,0 +1,1421 @@
+{
+  "TMP": {
+    "descr": "Temperature",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "5",
+          "2",
+          "1",
+          "3",
+          "7",
+          "0.4",
+          "15",
+          "40"
+        ]
+      },
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      },
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      },
+      "MWSL": {
+        "descr": "Maximum wind level",
+        "values": [
+          "0"
+        ]
+      },
+      "GPML": {
+        "descr": "Specified altitude above mean sea level",
+        "values": [
+          "1829",
+          "2743",
+          "3658"
+        ]
+      },
+      "PVL": {
+        "descr": "Potential vorticity surface",
+        "values": [
+          "2000",
+          "-2000"
+        ]
+      },
+      "SIGL": {
+        "descr": "Sigma level",
+        "values": [
+          "0.995"
+        ]
+      },
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "2",
+          "80",
+          "100"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,30"
+        ]
+      }
+    }
+  },
+  "POT": {
+    "descr": "Potential temperature",
+    "levels": {
+      "SIGL": {
+        "descr": "Sigma level",
+        "values": [
+          "0.995"
+        ]
+      }
+    }
+  },
+  "APTMP": {
+    "descr": "Apparent temperature",
+    "levels": {
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "2"
+        ]
+      }
+    }
+  },
+  "DPT": {
+    "descr": "Dewpoint temperature",
+    "levels": {
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "2"
+        ]
+      }
+    }
+  },
+  "TOZNE": {
+    "descr": "Total ozone",
+    "levels": {
+      "EATM": {
+        "descr": "Entire atmosphere (considered as a single layer)",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "O3MR": {
+    "descr": "Ozone mixing ratio",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "850",
+          "700",
+          "500",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "5",
+          "2",
+          "1",
+          "3",
+          "7",
+          "0.4",
+          "15",
+          "40"
+        ]
+      }
+    }
+  },
+  "REFC": {
+    "descr": "Maximum/Composite radar reflectivity",
+    "levels": {
+      "EATM": {
+        "descr": "Entire atmosphere",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "VIS": {
+    "descr": "Visibility",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "ICSEV": {
+    "descr": "Icing severity",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "950",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100"
+        ]
+      }
+    }
+  },
+  "SPF H": {
+    "descr": "Specific humidity",
+    "levels": {
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "2",
+          "80"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,30"
+        ]
+      }
+    }
+  },
+  "R H": {
+    "descr": "Relative humidity",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "5",
+          "2",
+          "1",
+          "3",
+          "7"
+        ]
+      },
+      "EATM": {
+        "descr": "Entire atmosphere (considered as a single layer)",
+        "values": [
+          "0"
+        ]
+      },
+      "0DEG": {
+        "descr": "Level of 0-degree C isotherm",
+        "values": [
+          "0"
+        ]
+      },
+      "HTFL": {
+        "descr": "Highest tropospheric freezing level",
+        "values": [
+          "0"
+        ]
+      },
+      "SIGL": {
+        "descr": "Sigma level",
+        "values": [
+          "0.995",
+          "1,0.44",
+          "0.94,0.72",
+          "0.72,0.44",
+          "1,0.33"
+        ]
+      },
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "2"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,30"
+        ]
+      }
+    }
+  },
+  "SNO D": {
+    "descr": "Snow depth",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "WEASD": {
+    "descr": "Water equivalent of accumulated snow depth",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CRAIN": {
+    "descr": "Categorical rain (yes=1; no=0)",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CFRZR": {
+    "descr": "Categorical freezing rain (yes=1; no=0)",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CICEP": {
+    "descr": "Categorical ice pellets (yes=1; no=0)",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CSNOW": {
+    "descr": "Categorical snow (yes=1; no=0)",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "PEVPR": {
+    "descr": "Potential evaporation rate",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CLWMR": {
+    "descr": "Cloud water mixing ratio",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "50"
+        ]
+      },
+      "HYBL": {
+        "descr": "Hybrid level",
+        "values": [
+          "1"
+        ]
+      }
+    }
+  },
+  "ICMR": {
+    "descr": "Ice water mixing ratio",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "50"
+        ]
+      },
+      "HYBL": {
+        "descr": "Hybrid level",
+        "values": [
+          "1"
+        ]
+      }
+    }
+  },
+  "RWMR": {
+    "descr": "Rain water mixing ratio",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "50"
+        ]
+      },
+      "HYBL": {
+        "descr": "Hybrid level",
+        "values": [
+          "1"
+        ]
+      }
+    }
+  },
+  "SNMR": {
+    "descr": "Snow water mixing ratio",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "50"
+        ]
+      },
+      "HYBL": {
+        "descr": "Hybrid level",
+        "values": [
+          "1"
+        ]
+      }
+    }
+  },
+  "P WAT": {
+    "descr": "Precipitable water",
+    "levels": {
+      "EATM": {
+        "descr": "Entire atmosphere (considered as a single layer)",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "GRLE": {
+    "descr": "Graupel",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "50"
+        ]
+      },
+      "HYBL": {
+        "descr": "Hybrid level",
+        "values": [
+          "1"
+        ]
+      }
+    }
+  },
+  "CPRAT": {
+    "descr": "Convective precipitation rate",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CPOFP": {
+    "descr": "Percent frozen precipitation",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "PRATE": {
+    "descr": "Precipitation rate",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "ABS V": {
+    "descr": "Absolute vorticity",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "0.4",
+          "15",
+          "40"
+        ]
+      }
+    }
+  },
+  "VW SH": {
+    "descr": "Vertical speed shear",
+    "levels": {
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      },
+      "PVL": {
+        "descr": "Potential vorticity surface",
+        "values": [
+          "2000",
+          "-2000"
+        ]
+      }
+    }
+  },
+  "USTM": {
+    "descr": "u-component of storm motion",
+    "levels": {
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "0,6000"
+        ]
+      }
+    }
+  },
+  "VSTM": {
+    "descr": "v-component of storm motion",
+    "levels": {
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "0,6000"
+        ]
+      }
+    }
+  },
+  "U GRD": {
+    "descr": "u-component of wind",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "5",
+          "2",
+          "1",
+          "3",
+          "7"
+        ]
+      },
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      },
+      "MWSL": {
+        "descr": "Maximum wind level",
+        "values": [
+          "0"
+        ]
+      },
+      "GPML": {
+        "descr": "Specified altitude above mean sea level",
+        "values": [
+          "1829",
+          "2743",
+          "3658"
+        ]
+      },
+      "PVL": {
+        "descr": "Potential vorticity surface",
+        "values": [
+          "2000",
+          "-2000"
+        ]
+      },
+      "SIGL": {
+        "descr": "Sigma level",
+        "values": [
+          "0.995"
+        ]
+      },
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "10",
+          "80",
+          "100",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,30"
+        ]
+      },
+      "PBLRI": {
+        "descr": "Planetary boundary layer",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "GUST": {
+    "descr": "Wind speed (gust)",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "VRATE": {
+    "descr": "Ventilation rate",
+    "levels": {
+      "PBLRI": {
+        "descr": "Planetary boundary layer",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "V GRD": {
+    "descr": "v-component of wind",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "5",
+          "2",
+          "1",
+          "3",
+          "7"
+        ]
+      },
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      },
+      "MWSL": {
+        "descr": "Maximum wind level",
+        "values": [
+          "0"
+        ]
+      },
+      "GPML": {
+        "descr": "Specified altitude above mean sea level",
+        "values": [
+          "1829",
+          "2743",
+          "3658"
+        ]
+      },
+      "PVL": {
+        "descr": "Potential vorticity surface",
+        "values": [
+          "2000",
+          "-2000"
+        ]
+      },
+      "SIGL": {
+        "descr": "Sigma level",
+        "values": [
+          "0.995"
+        ]
+      },
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "10",
+          "80",
+          "100",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,30"
+        ]
+      },
+      "PBLRI": {
+        "descr": "Planetary boundary layer",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "V VEL": {
+    "descr": "Vertical velocity (pressure)",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100"
+        ]
+      },
+      "SIGL": {
+        "descr": "Sigma level",
+        "values": [
+          "0.995"
+        ]
+      }
+    }
+  },
+  "DZDT": {
+    "descr": "Vertical velocity (geometric)",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100"
+        ]
+      }
+    }
+  },
+  "PRES": {
+    "descr": "Pressure",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      },
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      },
+      "MWSL": {
+        "descr": "Maximum wind level",
+        "values": [
+          "0"
+        ]
+      },
+      "PVL": {
+        "descr": "Potential vorticity surface",
+        "values": [
+          "2000",
+          "-2000"
+        ]
+      },
+      "CCTL": {
+        "descr": "Convective cloud top level",
+        "values": [
+          "0"
+        ]
+      },
+      "CCBL": {
+        "descr": "Convective cloud bottom level",
+        "values": [
+          "0"
+        ]
+      },
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "80"
+        ]
+      }
+    }
+  },
+  "PRMSL": {
+    "descr": "Pressure reduced to MSL",
+    "levels": {
+      "MSL": {
+        "descr": "Mean sea level",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "MSLET": {
+    "descr": "MSLP (Eta model reduction)",
+    "levels": {
+      "MSL": {
+        "descr": "Mean sea level",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "5WAVH": {
+    "descr": "5-wave geopotential height",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "500"
+        ]
+      }
+    }
+  },
+  "HPBL": {
+    "descr": "Planetary boundary layer height",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "PLPL": {
+    "descr": "Pressure of level from which parcel was lifted",
+    "levels": {
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,255"
+        ]
+      }
+    }
+  },
+  "ICAHT": {
+    "descr": "ICAO standard atmosphere reference height",
+    "levels": {
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "HGT": {
+    "descr": "Geopotential height",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "70",
+          "50",
+          "30",
+          "20",
+          "10",
+          "5",
+          "2",
+          "1",
+          "3",
+          "7",
+          "0.4",
+          "15",
+          "40"
+        ]
+      },
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      },
+      "TRO": {
+        "descr": "Tropopause",
+        "values": [
+          "0"
+        ]
+      },
+      "MWSL": {
+        "descr": "Maximum wind level",
+        "values": [
+          "0"
+        ]
+      },
+      "0DEG": {
+        "descr": "Level of 0-degree C isotherm",
+        "values": [
+          "0"
+        ]
+      },
+      "HTFL": {
+        "descr": "Highest tropospheric freezing level",
+        "values": [
+          "0"
+        ]
+      },
+      "PVL": {
+        "descr": "Potential vorticity surface",
+        "values": [
+          "2000",
+          "-2000"
+        ]
+      }
+    }
+  },
+  "T CDC": {
+    "descr": "Total cloud cover",
+    "levels": {
+      "ISBL": {
+        "descr": "Isobaric surface",
+        "values": [
+          "1000",
+          "975",
+          "950",
+          "925",
+          "900",
+          "850",
+          "800",
+          "750",
+          "700",
+          "650",
+          "600",
+          "550",
+          "500",
+          "450",
+          "400",
+          "350",
+          "300",
+          "250",
+          "200",
+          "150",
+          "100",
+          "50"
+        ]
+      },
+      "CCY": {
+        "descr": "Convective cloud layer",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "SUNSD": {
+    "descr": "Sunshine duration",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "C WAT": {
+    "descr": "Cloud water",
+    "levels": {
+      "EATM": {
+        "descr": "Entire atmosphere (considered as a single layer)",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "LFT X": {
+    "descr": "Surface lifted index",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "4LFTX": {
+    "descr": "Best (4 layer) lifted index",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "CAPE": {
+    "descr": "Convective available potential energy",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,180",
+          "0,255"
+        ]
+      }
+    }
+  },
+  "CIN": {
+    "descr": "Convective inhibition",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      },
+      "SPDL": {
+        "descr": "Level at specified pressure difference from ground to level",
+        "values": [
+          "0,180",
+          "0,255"
+        ]
+      }
+    }
+  },
+  "HLCY": {
+    "descr": "Storm relative helicity",
+    "levels": {
+      "HTGL": {
+        "descr": "Specified height above ground",
+        "values": [
+          "0,3000"
+        ]
+      }
+    }
+  },
+  "ICEC": {
+    "descr": "Ice cover",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "LAND": {
+    "descr": "Land cover (0=sea, 1=land)",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "SOILW": {
+    "descr": "Volumetric soil moisture content",
+    "levels": {
+      "DBLL": {
+        "descr": "Depth below land surface",
+        "values": [
+          "0.1,0",
+          "0.4,0.1",
+          "1,0.4",
+          "2,1"
+        ]
+      }
+    }
+  },
+  "TSOIL": {
+    "descr": "Soil temperature",
+    "levels": {
+      "DBLL": {
+        "descr": "Depth below land surface",
+        "values": [
+          "0.1,0",
+          "0.4,0.1",
+          "1,0.4",
+          "2,1"
+        ]
+      }
+    }
+  },
+  "WILT": {
+    "descr": "Wilting point",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "LANDN": {
+    "descr": "Land-sea coverage (nearest neighbor) [land=1, sea=0]",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "FLDCP": {
+    "descr": "Field capacity",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  },
+  "HINDEX": {
+    "descr": "Haines index",
+    "levels": {
+      "SFC": {
+        "descr": "Ground or water surface",
+        "values": [
+          "0"
+        ]
+      }
+    }
+  }
+}

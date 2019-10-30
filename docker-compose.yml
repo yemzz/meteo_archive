@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  rabbitmq:
+    image: rabbitmq
+    command: rabbitmq-server
+    expose:
+      - 5672
+      - 15672
+    healthcheck:
+      test: [ "CMD", "nc", "-z", "localhost", "5672" ]
+      interval: 5s
+      timeout: 15s
+      retries: 1
+
+  python-meteo:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+    restart: on-failure
+    volumes:
+      - .:/usr/src/app/
+    depends_on:
+      - rabbitmq
+    ports:
+      - 8000:8000
