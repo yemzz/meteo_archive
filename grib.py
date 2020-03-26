@@ -6,7 +6,6 @@ import matplotlib.colors as colors
 import numpy as np
 import numpy as np
 import matplotlib.pylab as plt
-import lgblkb_tools.gdal_datasets as gds
 from osgeo import gdal
 from osgeo import gdal_array
 from osgeo import osr

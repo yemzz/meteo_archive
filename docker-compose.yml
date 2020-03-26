@@ -20,7 +20,7 @@ services:
     restart: "no"
     env_file:
       - env.env
-    command: ["celery", "worker", "--app=app", "-Q", "tasks.download", "--loglevel=INFO","-n@weather_download_temp","-c","6"]
+    command: ["celery", "worker", "--app=tasks", "-Q", "tasks.download", "--loglevel=INFO","-n@weather_download_temp","-c","6"]
     networks:
       - rabbit
     volumes:

@@ -112,5 +112,3 @@ def get_meteo(start_date, end_date, directory, param, levels):
                                                                                                 param, levels))
 
     grib.convert_to_raster(data_path)
-
-    return data_path
