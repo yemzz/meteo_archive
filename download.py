@@ -21,7 +21,7 @@ def main():
             if not os.path.exists(date_path):
                 os.makedirs(date_path)
             first_day_next_month += relativedelta(months=1)
-            download(download_date.strftime("%Y%m%d"),
+            download.delay(download_date.strftime("%Y%m%d"),
                            (first_day_next_month - relativedelta(days=1)).strftime("%Y%m%d"), date_path, param,
                            archive_info[param]["levels"])
             download_date = first_day_next_month
