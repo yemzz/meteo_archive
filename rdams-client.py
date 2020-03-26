@@ -32,6 +32,9 @@ import sys
 import getpass
 import http.cookiejar
 import json
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def update_progress(progress, outdir):
     """Displays or updates a console progress bar
@@ -237,7 +240,9 @@ if os.path.isfile(pwfile) and os.path.getsize(pwfile) > 0:
 else:
     (username, password) = get_userinfo()
 
+print("ONE")
 opener = add_http_auth(theurl, username, password)
+print("TWO")
 
 if len(jsondata) > 1:
     request = urllib.request.Request(
@@ -251,6 +256,7 @@ if sys.argv[1] == "-purge":
 try:
     url = opener.open(request)
 except urllib.error.HTTPError as e:
+    print("THREE")
     if e.code == 401:
         print('RDA username and password invalid.  Please try again\n')
         (username, password) = get_userinfo()
@@ -263,6 +269,8 @@ except urllib.error.HTTPError as e:
                     'RDA username and password invalid, or you are not authorized to access this dataset.\n')
                 print('Please verify your login information at http://rda.ucar.edu\n.')
                 sys.exit()
+
+print("FOUR")
 
 
 write_pw_file(pwfile, username, password)

@@ -1,6 +1,7 @@
 import subprocess
 import time
 import re
+import grib
 
 
 def get_meteo(start_date, end_date, directory, param, levels):
@@ -42,10 +43,10 @@ def get_meteo(start_date, end_date, directory, param, levels):
 
         print("level={}".format(formatted_levels), file=control_file)
         print("#oformat=netCDF", file=control_file)
-        print("nlat=53.93", file=control_file)
-        print("slat=52.21", file=control_file)
-        print("wlon=62.59", file=control_file)
-        print("elon=74.05", file=control_file)
+        print("nlat=55.7", file=control_file)
+        print("slat=49.2", file=control_file)
+        print("wlon=59.7", file=control_file)
+        print("elon=74.46", file=control_file)
         print("product=6-hour Forecast/3-hour Forecast/18-hour Forecast/Analysis", file=control_file)
         print("targetdir=/glade/scratch", file=control_file)
 
@@ -57,6 +58,7 @@ def get_meteo(start_date, end_date, directory, param, levels):
         raise ValueError(stderr1)
     stdout1 = stdout1.decode("utf-8")
 
+    print(stdout1)
     start_indx = stdout1.find("Request Index") + 14
     rqst_indx = stdout1[start_indx:start_indx + 6]
 
@@ -97,12 +99,18 @@ def get_meteo(start_date, end_date, directory, param, levels):
         raise ValueError(stderr1)
     stdout1 = stdout1.decode('utf-8')
 
+    print("STDOUT1 : %s", stdout1)
+
     path_indx = stdout1.find("Request to ") + 12
     path_end_indx = stdout1.find(" directory.")
-    data_path = stdout1[path_indx:path_end_indx]
+    data_path = stdout1[path_indx:path_end_indx-1]
+
+    print("DATA_PATH: %s", data_path)
 
     print("Successfully downloaded meteo data into this directory: {}".format(data_path))
     print("Time period is from {} to {} with these parameter {} for these levels: {}:\n".format(start_date, end_date,
                                                                                                 param, levels))
+
+    grib.convert_to_raster(data_path)
 
     return data_path
