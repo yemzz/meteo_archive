@@ -15,5 +15,5 @@ app.conf.update(
 
 @shared_task(bind=True, ignore_result=True, name='weather_download_temp',
              queue='tasks.download')
-def download(start_date, end_date, directory, param, levels):
-    get_meteo.get_meteo(start_date, end_date, directory, param, levels)
+def download(self, start_date, end_date, directory, param):
+    get_meteo.get_meteo(start_date, end_date, directory, param)

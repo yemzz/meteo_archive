@@ -97,7 +97,6 @@ def convert_file(filename, raster_name):
 
 def convert_to_raster(data_path):
     onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path, f))]
-    return
     path = data_path + '/' + onlyfiles[0]
     my_tar = tarfile.open(path)
     files_path = data_path + '/' + 'grib_files'

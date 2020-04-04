@@ -2,9 +2,11 @@ import subprocess
 import time
 import re
 import grib
+import json 
 
 
-def get_meteo(start_date, end_date, directory, param, levels):
+
+def get_meteo(start_date, end_date, directory, param):
     """Downloads GFS meteo data
 
     Parameters
@@ -26,6 +28,18 @@ def get_meteo(start_date, end_date, directory, param, levels):
     str
         path to the downloaded file
     """
+    print("start_date; {}".format(start_date))
+    print("end_date; {}".format(end_date))
+    print("directory; {}".format(directory))
+    print("param; {}".format(param))
+    levels = {
+        "SFC": {
+            "descr": "Ground or water surface",
+            "values": [
+                "0"
+            ]
+        }
+    }
 
     formatted_levels = ""
 

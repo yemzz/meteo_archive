@@ -6,10 +6,11 @@ from dateutil.relativedelta import relativedelta
 from tasks import download
 from tasks import app
 
+
 def main():
-    download_date = datetime.date(2019, 6, 1)
+    download_date = datetime.date(2016, 1, 1)
     first_day_next_month = download_date
-    final_date = datetime.date(2019, 6, 2)
+    final_date = datetime.date(2020, 3, 1)
     print("here")
 
     with open('meteo_archive_info.json') as f:
@@ -23,13 +24,15 @@ def main():
                 os.makedirs(date_path)
             first_day_next_month += relativedelta(months=1)
             task_name = "weather_download_temp"
+            levels = archive_info[param]["levels"]
+            # print(levels)
             handler_task = app.signature(task_name,
-                                         args={"start_date": download_date.strftime("%Y%m%d"),
-                                                 "end_date": (first_day_next_month - relativedelta(days=1)).strftime("%Y%m%d"),
-                                                 "directory": date_path,
-                                                 "param": param,
-                                                 "levels": archive_info[param]["levels"]
-                                                 },
+                                         kwargs={"start_date": download_date.strftime("%Y%m%d"),
+                                               "end_date": (first_day_next_month - relativedelta(days=1)).strftime(
+                                                   "%Y%m%d"),
+                                               "directory": date_path,
+                                               "param": param
+                                               },
                                          queue="tasks.download")
 
             handler_task.apply_async()
