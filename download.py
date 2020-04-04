@@ -31,12 +31,13 @@ def main():
                                                "end_date": (first_day_next_month - relativedelta(days=1)).strftime(
                                                    "%Y%m%d"),
                                                "directory": date_path,
-                                               "param": param
+                                               "param": param,
+                                                "levels": archive_info[param]["levels"]
                                                },
                                          queue="tasks.download")
 
             handler_task.apply_async()
-            # download.delay(download_date.strftime("%Y%m%d"),
+            # download(download_date.strftime("%Y%m%d"),
             #                (first_day_next_month - relativedelta(days=1)).strftime("%Y%m%d"), date_path, param,
             #                archive_info[param]["levels"])
             download_date = first_day_next_month

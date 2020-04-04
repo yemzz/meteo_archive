@@ -6,7 +6,7 @@ import json
 
 
 
-def get_meteo(start_date, end_date, directory, param):
+def get_meteo(start_date, end_date, directory, param, levels):
     """Downloads GFS meteo data
 
     Parameters
@@ -32,14 +32,15 @@ def get_meteo(start_date, end_date, directory, param):
     print("end_date; {}".format(end_date))
     print("directory; {}".format(directory))
     print("param; {}".format(param))
-    levels = {
-        "SFC": {
-            "descr": "Ground or water surface",
-            "values": [
-                "0"
-            ]
-        }
-    }
+    print("levels {}".format(levels))
+    # levels = {
+    #     "SFC": {
+    #         "descr": "Ground or water surface",
+    #         "values": [
+    #             "0"
+    #         ]
+    #     }
+    # }
 
     formatted_levels = ""
 
@@ -57,10 +58,10 @@ def get_meteo(start_date, end_date, directory, param):
 
         print("level={}".format(formatted_levels), file=control_file)
         print("#oformat=netCDF", file=control_file)
-        print("nlat=55.7", file=control_file)
-        print("slat=49.2", file=control_file)
-        print("wlon=59.7", file=control_file)
-        print("elon=74.46", file=control_file)
+        print("nlat=60.7", file=control_file)
+        print("slat=45.2", file=control_file)
+        print("wlon=54.7", file=control_file)
+        print("elon=78.46", file=control_file)
         print("product=6-hour Forecast/3-hour Forecast/18-hour Forecast/Analysis", file=control_file)
         print("targetdir=/glade/scratch", file=control_file)
 
@@ -72,7 +73,7 @@ def get_meteo(start_date, end_date, directory, param):
         raise ValueError(stderr1)
     stdout1 = stdout1.decode("utf-8")
 
-    print(stdout1)
+    # print(stdout1)
     start_indx = stdout1.find("Request Index") + 14
     rqst_indx = stdout1[start_indx:start_indx + 6]
 
@@ -113,7 +114,7 @@ def get_meteo(start_date, end_date, directory, param):
         raise ValueError(stderr1)
     stdout1 = stdout1.decode('utf-8')
 
-    print("STDOUT1 : %s", stdout1)
+    # print("STDOUT1 : %s", stdout1)
 
     path_indx = stdout1.find("Request to ") + 12
     path_end_indx = stdout1.find(" directory.")
@@ -124,5 +125,5 @@ def get_meteo(start_date, end_date, directory, param):
     print("Successfully downloaded meteo data into this directory: {}".format(data_path))
     print("Time period is from {} to {} with these parameter {} for these levels: {}:\n".format(start_date, end_date,
                                                                                                 param, levels))
-
-    grib.convert_to_raster(data_path)
+    if param == "TMP":
+        grib.convert_to_raster(data_path)

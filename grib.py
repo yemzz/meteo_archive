@@ -14,10 +14,10 @@ from os.path import isfile, join
 import tarfile
 from subprocess import call
 
-LAT2 = 55.7
-LAT1 = 49.2
-LON1 = 59.7
-LON2 = 74.46
+LAT2 = 60.7
+LAT1 = 45.2
+LON1 = 54.7
+LON2 = 78.46
 
 cnt = 0
 
@@ -110,10 +110,9 @@ def convert_to_raster(data_path):
         parts = grib_file.split('.')
         outfile_name = './raster_images/' + date + "/" + parts[2] + '-' + parts[3]
         file = files_path + '/' + grib_file
-        print("FILE ", file)
-        print("OUT ", outfile_name)
+        # print("FILE ", file)
+        # print("OUT ", outfile_name)
         convert_file(file, outfile_name)
-    os.remove(data_path)
 
 def main():
     convert_to_raster('./archive_files/TMP/2019-06')
